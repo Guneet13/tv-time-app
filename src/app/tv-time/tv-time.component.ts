@@ -8,16 +8,29 @@ import { ITvTime } from '../itv-time';
 })
 export class TvTimeComponent implements OnInit {
   show: ITvTime
-  constructor() {
+  constructor() {  
     this.show = {
-      id: 139,
       name: "Girls",
       status: "Ended",
-      lang: "English",
-      networkName: "HBO",
-      // image: "https://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg",
-      image: "https://static.tvmaze.com/uploads/images/original_untouched/31/78286.jpg",
-      previousEpisode: "",
+      language: "English",
+      genres: ["Comedy"," Family "," Romance"],
+      network: {
+        name: "HBO",
+      },
+      image: {
+        original: "https://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg",
+      },
+      _links: {
+        previousEpisode: {
+          href: "https://api.tvmaze.com/episodes/1079686"
+        }
+      },
+      summary: "This Emmy winning series is a comic look at the assorted humiliations and rare triumphs of a group of girls in their 20s.",
+      rating: "6.6",
+      schedule: {
+        time: "12:00",
+        days: ["Sunday"," Monday"],
+      }
     }//id, name, status,lang, networkName, image, previousEpisode
   }
 

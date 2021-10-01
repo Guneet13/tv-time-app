@@ -1,9 +1,25 @@
 export interface ITvTime {
-  id: number,
   name: string,
+  language: string,
   status: string,
-  lang: string,
-  networkName: string,
-  image: string,
-  previousEpisode: string,
+  schedule: {
+    time: string,
+    days: string[],
+  },
+  rating: string,
+  genres: string[],
+  network: {
+    name:string
+  },
+  image: {
+    original: string,
+  },
+  _links: {
+    previousEpisode: {
+      href: string,
+    }
+  },
+  summary: string,
+  
+  
 }

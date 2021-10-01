@@ -1,13 +1,17 @@
 <div>
   <div class="col1">
-    <img [src]="show.image" alt="">
+    <img [src]="show.image.original" alt="">
   </div>
   <div class="col2">
-    <h2> {{show.name}} ({{show.networkName}})</h2>
-    <span>Previous episode: {{show.previousEpisode}}</span><br>
+    <h2> {{show.name}} | {{show.rating}}</h2>
+    <p>{{show.genres}}</p>
+    <h4><span>{{show.language}}</span><br></h4>
+    <span>Previous episode: {{show._links.previousEpisode.href}}</span><br>
+    <p class="schedule">
+      <span>Schedule: {{show.network.name}} {{show.schedule.time}} on {{show.schedule.days}}</span><br>
+    </p>
     <span>Show Status: {{show.status}}</span><br>
-    <span>{{show.lang}}</span><br>
-    <span>Available on {{show.networkName}}</span><br>
+    <p>Summary: {{show.summary}}</p>
   </div>
 </div>
 

@@ -4,11 +4,12 @@ export interface IdataFilter {
   status : string,
   schedule : {
     time: string,
-    days: []  //is that right?
+    days: string[]  //is that right?
   },
   rating: {
     average: number
   },
+  genres: string[],
   network : {
     name: string
   },
@@ -17,10 +18,8 @@ export interface IdataFilter {
   },
   summary: string,
   _links: {
-    previousepisode: {
+    previousEpisode: {
       href: string
     }
   }
-
-
 }
