@@ -8,14 +8,15 @@ import { ITvTime } from '../itv-time';
 })
 export class TvTimeComponent implements OnInit {
   show: ITvTime
-  constructor() {  
+  constructor() {
     this.show = {
       id: 139,
       name: "Girls",
       status: "Ended",
       lang: "English",
       networkName: "HBO",
-      image: "https://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg",
+      // image: "https://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg",
+      image: "https://static.tvmaze.com/uploads/images/original_untouched/31/78286.jpg",
       previousEpisode: "",
     }//id, name, status,lang, networkName, image, previousEpisode
   }
