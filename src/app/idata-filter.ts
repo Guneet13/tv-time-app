@@ -4,18 +4,23 @@ export interface IdataFilter {
   status : string,
   schedule : {
     time: string,
-    days: [string]  //is that right?
+    days: []  //is that right?
   },
   rating: {
     average: number
   },
   network : {
     name: string
-  }
+  },
   image: {
     original: string //medium looks vague, so I choose to use original
+  },
+  summary: string,
+  _links: {
+    previousepisode: {
+      href: string
+    }
   }
-  summary: string
 
 
 }
