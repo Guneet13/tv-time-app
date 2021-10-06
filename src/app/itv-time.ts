@@ -2,24 +2,15 @@ export interface ITvTime {
   name: string,
   language: string,
   status: string,
-  schedule: {
+  time: string,
+  days: string[],
+  /*schedule: {
     time: string,
     days: string[],
-  },
-  rating: string,
+  },*/
+  rating: number,
   genres: string[],
-  network: {
-    name:string
-  },
-  image: {
-    original: string,
-  },
-  _links: {
-    previousEpisode: {
-      href: string,
-    }
-  },
+  network: string,
+  image: string,
   summary: string,
-  
-  
 }

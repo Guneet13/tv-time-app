@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ITvTime } from '../itv-time';
+import { TvTimeService } from '../tv-time.service';
 
 @Component({
   selector: 'app-tv-time',
@@ -8,12 +9,31 @@ import { ITvTime } from '../itv-time';
 })
 export class TvTimeComponent implements OnInit {
   show: ITvTime
-  constructor() {  
+  constructor(private tvTimeService: TvTimeService) {  
+    this.show = {
+      name: "",
+      language: "",
+      status: "",
+      time: "",
+      days: [],
+      rating: 0,
+      genres: [],
+      network: "",
+      image: "",
+      /*_links: {
+        previousEpisode: {
+          href: ""
+        }
+      },*/
+      summary: "",
+    }
+  }
+  /*constructor() {  
     this.show = {
       name: "Girls",
       status: "Ended",
       language: "English",
-      genres: ["Comedy"," Family "," Romance"],
+      genres: ["Comedy"," Family ", " Romance"],
       network: {
         name: "HBO",
       },
@@ -21,20 +41,18 @@ export class TvTimeComponent implements OnInit {
         original: "https://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg",
       },
       _links: {
-        previousEpisode: {
+        previousepisode: {
           href: "https://api.tvmaze.com/episodes/1079686"
         }
       },
       summary: "This Emmy winning series is a comic look at the assorted humiliations and rare triumphs of a group of girls in their 20s.",
       rating: "6.6",
-      schedule: {
-        time: "12:00",
-        days: ["Sunday"," Monday"],
-      }
-    }//id, name, status,lang, networkName, image, previousEpisode
-  }
+      time: "12:00",
+      days: ["Sunday"," Monday"],
+    }
+  }*/
 
   ngOnInit(): void {
+    this.tvTimeService.getShowData('vegas').subscribe(data => this.show = data);
   }
-
 }
