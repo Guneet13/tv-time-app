@@ -4,10 +4,6 @@ export interface ITvTime {
   status: string,
   time: string,
   days: string[],
-  /*schedule: {
-    time: string,
-    days: string[],
-  },*/
   rating: number,
   genres: string[],
   network: string,

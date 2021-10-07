@@ -3,14 +3,11 @@
     <img [src]="show.image" alt="">
   </div>
   <div class="col2">
-    <h2> {{show.name}} | {{show.rating}}</h2>
-    <p>{{show.genres}}</p>
-    <h4><span>{{show.language}}</span><br></h4>
-    <p class="schedule">
-      <span>Schedule: {{show.network}} {{show.time}} on {{show.days}}</span><br>
-    </p>
-    <span>Show Status: {{show.status}}</span><br>
-    <p>Summary: {{show.summary}}</p>
+    <h1> {{show.name}} | {{show.rating}} average rating</h1>
+    <h3>{{show.network}} {{show.time}} on {{show.days}}</h3>
+    <h3>{{show.genres}} | {{show.language}}</h3>
+    <h4>Show Status: {{show.status}}</h4>
+    <div class="mat-body-1">Summary: {{show.summary}}</div>
   </div>
 </div>
 
