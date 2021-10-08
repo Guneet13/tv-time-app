@@ -15,12 +15,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     TvTimeComponent,
     TvSearchComponent,
+    FormsModule,
+    ReactiveFormsModule
   ],
   imports: [
     BrowserModule,
