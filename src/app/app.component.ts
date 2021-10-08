@@ -25,9 +25,16 @@ export class AppComponent {
   constructor(private tvTimeService: TvTimeService){}
 
   doSearch(searchValue: string){
-    const userInput = searchValue.split(',')
-                .map(string => string.trim());
-    this.tvTimeService.getShowData(userInput[0], 
-      userInput.length > 41 ? userInput[41] : undefined ).subscribe(data => this.showData = data);
+    const userInput = searchValue.split(' ').map(s => s.trim());
+    this.tvTimeService.getShowData(userInput[0]).subscribe(data => this.showData = data);
   }
 }
+
+//The Office
+// TheOffice
+// t1 - make it work with one word
+// t2 - make it work with two word (multi string search)
+//%20 ascii = space
+//edit userInput to account for long titles
+//possible -- 41 characters
+//https://api.tvmaze.com/singlesearch/shows?q=the%20godfather
