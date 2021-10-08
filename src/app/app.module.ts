@@ -21,9 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     TvTimeComponent,
-    TvSearchComponent,
-    FormsModule,
-    ReactiveFormsModule
+    TvSearchComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +35,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatCardModule,
     MatGridListModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [TvTimeService],
   bootstrap: [AppComponent]

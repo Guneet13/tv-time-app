@@ -26,7 +26,7 @@ export class TvTimeService {
       genres: data.genres,
       network: data.network.name,
       image: data.image.original,
-      summary: data.summary,
+      summary: data.summary
     }
   }
 }

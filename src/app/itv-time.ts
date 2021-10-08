@@ -8,5 +8,5 @@ export interface ITvTime {
   genres: string[],
   network: string,
   image: string,
-  summary: string,
+  summary: string
 }
