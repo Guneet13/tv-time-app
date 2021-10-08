@@ -30,11 +30,14 @@ export class AppComponent {
   }
 }
 
-//The Office
-// TheOffice
-// t1 - make it work with one word
-// t2 - make it work with two word (multi string search)
-//%20 ascii = space
-//edit userInput to account for long titles
-//possible -- 41 characters
-//https://api.tvmaze.com/singlesearch/shows?q=the%20godfather
+//To-do list
+
+//handle null response when no TV exists
+
+/* Two or more letter title 
+t1 - make it work with one word
+t2 - make it work with two word (multi string search)
+%20 ascii = space edit userInput to account for long titles
+possible -- 41 characters
+https://api.tvmaze.com/singlesearch/shows?q=the%20godfather
+*/
