@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ITvTime } from '../itv-time';
-import { TvTimeService } from '../tv-time.service';
 
 @Component({
   selector: 'app-tv-time',
@@ -8,8 +7,9 @@ import { TvTimeService } from '../tv-time.service';
   styleUrls: ['./tv-time.component.css']
 })
 export class TvTimeComponent implements OnInit {
-  show: ITvTime
-  constructor(private tvTimeService: TvTimeService) {  
+  @Input() show: ITvTime
+  
+  constructor() {  
     this.show = {
       name: "",
       language: "",
@@ -53,6 +53,6 @@ export class TvTimeComponent implements OnInit {
   }*/
 
   ngOnInit(): void {
-    this.tvTimeService.getShowData('vegas').subscribe(data => this.show = data);
+    
   }
 }
