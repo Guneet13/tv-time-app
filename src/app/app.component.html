@@ -3,12 +3,17 @@
     <mat-icon>tv</mat-icon>
   </mat-toolbar>  
 </div>
+
 <div class="tagline">
   Search your favorite show today!
 </div>
+
 <div class = "search">
-  <app-tv-search></app-tv-search>
+  <app-tv-search (searchEvent)="doSearch($event)" >
+
+  </app-tv-search>
 </div>
+
 <div>
     <app-tv-time></app-tv-time>
 </div>

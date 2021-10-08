@@ -1,7 +1,17 @@
 <form>
   <mat-form-field appearance="outline">
-    <mat-icon matPrefix>search</mat-icon>
-    <input matInput placeholder="Enter a show's full name"/>
-    <mat-hint>For example: Emily in Paris</mat-hint>
+
+    <mat-icon matPrefix> search </mat-icon>
+
+    <input matInput placeholder="Enter a show's full name" [formControl]="search" />
+
+    <mat-hint>
+      For example: "Emily in Paris"
+    </mat-hint>
+
+    <mat-error *ngIf="search.invalid">
+      The movie title is not long enough. Try again
+    </mat-error>
+
   </mat-form-field>
 </form>

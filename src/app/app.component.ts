@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tv-time-app';
+  //make a call to tv-search components
 }
