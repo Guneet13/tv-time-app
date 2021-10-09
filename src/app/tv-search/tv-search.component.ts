@@ -18,8 +18,8 @@ export class TvSearchComponent implements OnInit {
     this.search.valueChanges
     .pipe(debounceTime(1000))
     .subscribe((searchValue: string) => {
-      if(!this.search.invalid ){
-        this.searchEvent.emit(searchValue)
+      if(!this.search.invalid){
+        this.searchEvent.emit(searchValue);
       }
     })
   }

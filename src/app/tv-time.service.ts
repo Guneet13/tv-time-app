@@ -28,7 +28,6 @@ export class TvTimeService {
       network: data.network?  data.network.name : data.webChannel?.name,
       image: data.image.original,
       summary: data.summary
-
     }
   }
 }
