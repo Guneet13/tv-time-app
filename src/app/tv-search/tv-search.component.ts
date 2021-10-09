@@ -9,7 +9,7 @@ import { debounceTime } from 'rxjs/operators';
 })
 export class TvSearchComponent implements OnInit {
   @Output() searchEvent = new EventEmitter<string>();
-  search = new FormControl('', [Validators.minLength(3)])
+  search = new FormControl('', [Validators.minLength(3)]);
   /* By default it will show null in the text value & adding a validation of minimum length of 1 characters for a tv show name*/
   constructor() { }
 

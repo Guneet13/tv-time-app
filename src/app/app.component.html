@@ -1,7 +1,7 @@
 <div>
   <mat-toolbar class="mat-display-2" color = "primary">TV Time
     <mat-icon>tv</mat-icon>
-  </mat-toolbar>  
+  </mat-toolbar>
 </div>
 
 <div class="tagline">
@@ -13,6 +13,6 @@
   </app-tv-search>
 </div>
 
-<div>
+<div *ngIf = "showData.name!=''"> // have a cleaner landing page. Only show result when there IS a result.
     <app-tv-time [show]="showData"></app-tv-time>
 </div>

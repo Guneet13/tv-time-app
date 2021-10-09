@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 import { ITvTime } from './itv-time';
 import { TvTimeService } from './tv-time.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'tv-time-app';
   showData: ITvTime = {
     name: "",
@@ -33,4 +35,3 @@ export class AppComponent {
       }
   }
 }
-
