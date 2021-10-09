@@ -6,7 +6,7 @@ export interface ITvTime {
   days: string[],
   rating: number,
   genres: string[],
-  network: string,
+  network?: string,
   image: string,
   summary: string
 }

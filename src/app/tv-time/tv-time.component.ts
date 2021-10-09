@@ -8,8 +8,8 @@ import { ITvTime } from '../itv-time';
 })
 export class TvTimeComponent implements OnInit {
   @Input() show: ITvTime
-  
-  constructor() {  
+
+  constructor() {
     this.show = {
       name: "",
       language: "",
@@ -28,7 +28,7 @@ export class TvTimeComponent implements OnInit {
       summary: "",
     }
   }
-  /*constructor() {  
+  /*constructor() {
     this.show = {
       name: "Girls",
       status: "Ended",
@@ -53,6 +53,6 @@ export class TvTimeComponent implements OnInit {
   }*/
 
   ngOnInit(): void {
-    
+
   }
 }

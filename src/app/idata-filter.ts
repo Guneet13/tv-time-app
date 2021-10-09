@@ -10,11 +10,14 @@ export interface IDataFilter {
     average: number,
   },
   genres: string[],
-  network: {
+  network?: {
+    name: string //according to search test, network may be null for some TV shows. They may have webChannel instead.
+  },
+  webChannel?:{
     name: string
   },
   image: {
-    original: string 
+    original: string
   },
   summary: string,
 }

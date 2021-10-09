@@ -17,16 +17,17 @@ export class AppComponent {
     days: [],
     rating: 0,
     genres: [],
-    network: "",
+    network: "" ,
     image: "",
     summary: "",
   }
 
-  constructor(private tvTimeService: TvTimeService){}
+  constructor(private tvTimeService: TvTimeService) { }
 
-  doSearch(searchValue: string){
-    const userInput = searchValue.split(' ').map(s => s.trim());
-    this.tvTimeService.getShowData(userInput[0]).subscribe(data => this.showData = data);
+  doSearch(searchValue: string) {
+    this.tvTimeService.getShowData(searchValue).subscribe(data => this.showData = data);
+
+
   }
 }
 
@@ -34,7 +35,7 @@ export class AppComponent {
 
 //handle null response when no TV exists
 
-/* Two or more letter title 
+/* Two or more letter title
 t1 - make it work with one word
 t2 - make it work with two word (multi string search)
 %20 ascii = space edit userInput to account for long titles
