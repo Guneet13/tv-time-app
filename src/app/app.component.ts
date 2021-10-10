@@ -18,7 +18,7 @@ export class AppComponent {
     time: "",
     days: [],
     rating: 0,
-    genres: [],
+    genres: "",
     network: "" ,
     image: "",
     summary: "",
@@ -31,7 +31,7 @@ export class AppComponent {
   doSearch(searchValue: string){
       const userInput = searchValue.replace(/\s+/g,"%20");
       if(userInput){
-        this.tvTimeService.getShowData(userInput).subscribe(data => this.showData = data);
+        this.tvTimeService.getShowData(userInput).subscribe(data=> this.showData = data);
       }
   }
 }
