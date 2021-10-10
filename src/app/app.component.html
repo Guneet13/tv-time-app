@@ -1,5 +1,5 @@
 <div>
-  <mat-toolbar class="mat-display-2" color = "primary">TV Time
+  <mat-toolbar class="mat-display-2" color = "primary">TV Time &nbsp;
     <mat-icon>tv</mat-icon>
   </mat-toolbar>
 </div>
@@ -12,7 +12,12 @@
   <app-tv-search (searchEvent)="doSearch($event)" >
   </app-tv-search>
 </div>
+<br>
+<br>
 
+<div>
+  <mat-error *ngIf = "userHasInput && showData.name == '' "> We don't have a show in this name. Try another name? </mat-error>
+</div>
 <div *ngIf = "showData.name!=''">
     <app-tv-time [show]="showData"></app-tv-time>
 </div>

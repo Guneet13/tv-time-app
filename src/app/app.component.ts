@@ -23,15 +23,20 @@ export class AppComponent {
     image: "",
     summary: "",
   }
+  userHasInput = false;
 
   constructor(private tvTimeService: TvTimeService) { }
 
 
 
   doSearch(searchValue: string){
+      this.userHasInput = true;
+
       const userInput = searchValue.replace(/\s+/g,"%20");
       if(userInput){
+
         this.tvTimeService.getShowData(userInput).subscribe(data=> this.showData = data);
+        
       }
   }
 }
