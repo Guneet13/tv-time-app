@@ -27,7 +27,7 @@ export class TvTimeService {
       genres: data.genres,
       network: data.network?  data.network.name : data.webChannel?.name,
       image: data.image.original,
-      summary: data.summary
+      summary: data.summary.replace( /(<([^>]+)>)/ig, '') //The original summary from TVmaze API has HTML tags, Which should be hidden from users. This replace() removes HTML tags from summary.
     }
   }
 }

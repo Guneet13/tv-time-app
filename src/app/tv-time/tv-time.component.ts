@@ -11,7 +11,7 @@ export class TvTimeComponent implements OnInit {
 
   constructor() {
     this.show = {
-      name: "",
+      name: "you",
       language: "",
       status: "",
       time: "",
@@ -19,7 +19,7 @@ export class TvTimeComponent implements OnInit {
       rating: 0,
       genres: [],
       network: "",
-      image: "",
+      image: "https://www.google.com/imgres?imgurl=https%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F13812849648%2F1000.jpg&imgrefurl=https%3A%2F%2Fsunnews.cc%2Fentertainment%2F333051.html&tbnid=YJCNrEHgpPAJLM&vet=12ahUKEwjloK6fyL7zAhWKr54KHYijASsQMygFegUIARC0AQ..i&docid=J2uhNDxebBHXEM&w=735&h=818&itg=1&q=%E4%BD%A0%E6%98%AF%E6%88%91%E7%9A%84%E8%8D%A3%E8%80%80&ved=2ahUKEwjloK6fyL7zAhWKr54KHYijASsQMygFegUIARC0AQ",
       /*_links: {
         previousEpisode: {
           href: ""
