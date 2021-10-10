@@ -1,15 +1,15 @@
 export interface IDataFilter {
   name: string,
-  language: string,
-  status: string,
-  schedule: {
-    time: string,
-    days: string[]
+  language?: string,
+  status?: string,
+  schedule?: {
+    time?: string,
+    days?: string[]
   },
-  rating: {
+  rating?: {
     average: number,
   },
-  genres: string[],
+  genres?: string[],
   network?: {
     name: string //according to search test, network may be null for some TV shows. They may have webChannel instead.
   },
@@ -19,5 +19,5 @@ export interface IDataFilter {
   image?: {
     original: string
   },
-  summary: string,
+  summary?: string,
 }

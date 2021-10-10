@@ -21,13 +21,13 @@ export class TvTimeService {
       name: data.name,
       language: data.language,
       status: data.status,
-      time: data.schedule.time,
-      days: data.schedule.days,
-      rating: data.rating.average,
-      genres: data.genres.join(", "),
+      time: data.schedule?.time,
+      days: data.schedule?.days,
+      rating: data.rating?.average,
+      genres: data.genres?.join(", "),
       network: data.network?  data.network.name : data.webChannel?.name,
       image: data.image?.original,
-      summary: data.summary.replace( /(<([^>]+)>)/ig, '') //The original summary from TVmaze API has HTML tags, Which should be hidden from users. This replace() removes HTML tags from summary.
+      summary: data.summary?.replace( /(<([^>]+)>)/ig, '') //The original summary from TVmaze API has HTML tags, Which should be hidden from users. This replace() removes HTML tags from summary.
     }
   }
 }
