@@ -16,7 +16,7 @@ export interface IDataFilter {
   webChannel?:{
     name: string
   },
-  image: {
+  image?: {
     original: string
   },
   summary: string,

@@ -7,6 +7,6 @@ export interface ITvTime {
   rating: number,
   genres: string,
   network?: string,
-  image: string,
+  image?: string,
   summary: string
 }
