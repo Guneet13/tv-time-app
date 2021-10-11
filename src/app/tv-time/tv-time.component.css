@@ -7,11 +7,11 @@
   /* Desktop & tablet */
 @media screen and (min-width: 768px){
   .col1{
-    width: 20%;
+    width: 27%;
     height: 300px;
     float: left;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 3%;
   }
   img{
     width: 220px;
