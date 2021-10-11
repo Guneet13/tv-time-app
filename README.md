@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
+# Walking thru the webiste working model and the code, youtube link is here:
+
+https://www.youtube.com/watch?v=qEG8z6yNc_I
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
