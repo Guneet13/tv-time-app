@@ -22,12 +22,12 @@ export class AppComponent {
     image: "",
     summary: "",
   }
-  userHasInput = false;
+  // userHasInput = false;
 
   constructor(private tvTimeService: TvTimeService) { }
 
   doSearch(searchValue: string){
-      this.userHasInput = true;
+      // this.userHasInput = true;
 
       const userInput = searchValue.replace(/\s+/g,"%20");
       if(userInput){

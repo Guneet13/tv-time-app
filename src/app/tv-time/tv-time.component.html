@@ -1,6 +1,7 @@
+<section class="show-info">
 <div *ngIf="show else elseBlock">
   <div class="col1">
-    <img [src]="show.image" alt="">
+    <img [src]="show.image" alt="Show image">
   </div>
   <div class="col2">
     <h1> {{show.name}} | {{show.rating}} average rating</h1>
@@ -15,5 +16,4 @@
 <ng-template #elseBlock>
   <div><h3>Watch your fav show today!</h3></div>
 </ng-template>
-
-
+</section>

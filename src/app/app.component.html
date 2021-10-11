@@ -15,9 +15,12 @@
 <br>
 <br>
 
+<!-- This error message shows before result shows, because result has a debouce time of 1s. Need to fix it
 <div>
   <mat-error *ngIf = "userHasInput && showData.name == '' "> We don't have a show in this name. Try another name? </mat-error>
 </div>
+-->
+
 <div *ngIf = "showData.name!=''">
     <app-tv-time [show]="showData"></app-tv-time>
 </div>
