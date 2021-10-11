@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
-# Walking thru the website working model and the code, youtube link is here:
+# The Tv Time App and the code explanation(youtube link is here):
 
 https://www.youtube.com/watch?v=qEG8z6yNc_I
 
