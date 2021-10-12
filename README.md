@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
+# The Tv Time App web app where a user can search for a show name, the app will display the details of the show using the TVMaze api - https://www.tvmaze.com/api and youtube link is here to show how the webapp and the code works.
+
+https://www.youtube.com/watch?v=qEG8z6yNc_I
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
