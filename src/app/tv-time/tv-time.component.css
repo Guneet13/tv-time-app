@@ -14,9 +14,11 @@
     margin-right: 3%;
   }
   img{
-    width: 220px;
+    /* width: 220px;
     height: 290px;
-    padding: 5px;
+    padding: 5px; */
+    max-width: 100%;
+    height: auto;
   }
   .col2{
     float: right;
