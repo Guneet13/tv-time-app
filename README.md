@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
-# The Tv Time App web app where a user can search for a show name, the app will display the details of the show using the TVMaze api - https://www.tvmaze.com/api and youtube link is here to show how the webapp and the code works.
+# The Tv Time App web app where a user can search for a show name, the app will display the details of the show using the TVMaze api - https://www.tvmaze.com/api . If you interested in the demo of the app, youtube link is here.
 
 https://www.youtube.com/watch?v=qEG8z6yNc_I
 
